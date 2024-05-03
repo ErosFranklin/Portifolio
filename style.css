@@ -1,0 +1,97 @@
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+body{
+    margin:0;
+    padding:0;
+    background-color: black;
+    color:#fff;
+}
+.menu{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 30px;
+}
+.list-menu{
+    display:flex;
+    align-items: center;
+    gap:50px;
+}
+.itens-menu{
+    display:inline;
+}
+.itens-menu a{
+    color:#fff;
+    text-decoration: none;
+}
+.itens-menu a:hover{
+    color:yellow;
+    transition: .5s ease;
+}
+.item h3 i{
+    padding-right:10px;
+}
+.home{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about{
+    display:flex;
+    flex-direction: column;
+    position:fixed;
+    top:50%;
+    left:0;
+    padding:0 30px;
+    transform: translate(0%,-50%);
+}
+.about h1{
+    background:linear-gradient(to left, rgb(255, 255, 255), yellow,rgb(0, 0, 0));
+    background-clip: text;
+    display:inline;
+    color:transparent;
+    animation: animated 3s linear infinite;
+    margin-bottom:-5px;
+    font-size: 3em;
+}
+@keyframes animated{
+    to{background-position-x: 300px;}
+}
+.about p{
+    font-size:1.5em;
+}
+.about .links{
+    display:flex;
+    flex-direction: row;
+}
+.link a{
+    color: rgb(255, 255, 255);
+}
+.link #git:hover{
+    color:rgb(139, 139, 139);
+}
+.link #linkedin:hover{
+    color:rgb(0, 59, 252);
+}
+.link #insta:hover{
+    color:rgb(195, 43, 226);
+}
+.links .link{
+    margin-right:10px;
+    border-radius:50%;
+    padding:10px;
+}
+.link i{
+    font-size:30px;
+}
+.img{
+    display:flex;
+    flex-direction: column;
+    position:fixed;
+    top:50%;
+    right:0;
+    padding:0 30px;
+    transform: translate(0%,-50%);
+}
